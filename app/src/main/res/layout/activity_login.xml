@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standardColorWhite">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_titlebar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo_login"
+        app:layout_constraintLeft_toLeftOf="@+id/include"
+        app:layout_constraintRight_toRightOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <MaterialEditText
+        android:id="@+id/et_account"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+        android:hint="用户名"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_l"
+        app:backgroundColor="@color/colorPrimary"
+        app:floatingLabel="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <MaterialEditText
+        android:id="@+id/et_psw"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+        android:hint="密码"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_l"
+        app:backgroundColor="@color/colorPrimary"
+        app:floatingLabel="true"
+        app:layout_constraintRight_toRightOf="@+id/et_account"
+        app:layout_constraintTop_toBottomOf="@+id/et_account" />
+
+    <TextView
+        android:id="@+id/tv_btn_login"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_solid_selector"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="5dp"
+        android:text="登录"
+        android:textColor="@color/standardColorWhite"
+        android:textSize="@dimen/text_size_l"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/et_psw"
+        app:layout_constraintRight_toRightOf="@+id/et_psw"
+        app:layout_constraintTop_toBottomOf="@+id/et_psw"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+    <TextView
+        android:id="@+id/tv_btn_register"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_btn_hollow_selector"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="5dp"
+        android:text="注册"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_l"
+        app:layout_constraintLeft_toLeftOf="@+id/et_psw"
+        app:layout_constraintRight_toRightOf="@+id/et_psw"
+        app:layout_constraintTop_toBottomOf="@+id/tv_btn_login" />
+
+
+</android.support.constraint.ConstraintLayout>

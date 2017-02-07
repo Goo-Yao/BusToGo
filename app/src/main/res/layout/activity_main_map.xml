@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_titlebar"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@color/titleBackgroundColor"
+                android:elevation="1dp">
+
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_nav_menu_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_bus_24dp"
+                    android:text="附近公交"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xl" />
+
+            </RelativeLayout>
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bd_map_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/layout_titlebar"
+                android:clickable="true" />
+
+            <include
+                android:id="@+id/ll_station"
+                layout="@layout/bt_station" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_MyLocation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/ll_station"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bg_fab_mylocation_selector"
+                app:backgroundTint="@color/standardColorWhite"
+                app:fabSize="mini" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_slide_up"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/ll_station"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/fab_MyLocation"
+                android:src="@drawable/ic_slide_up_24dp"
+                android:visibility="gone"
+                app:backgroundTint="@color/standardColorWhite"
+                app:fabSize="mini" />
+
+            <include layout="@layout/layout_aboard" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_titlebar"
+                android:gravity="right"
+                android:orientation="horizontal" />
+
+            <include
+                layout="@layout/layout_route_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/layout_titlebar" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/drawer_main_activity"
+            layout="@layout/layout_main_activity_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

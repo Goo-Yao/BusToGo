@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_route_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_fab_main_24dp"
+        app:backgroundTint="@color/standardColorWhite"
+        app:fabSize="mini"
+        app:rippleColor="@color/fabPressColorGrey" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_closest_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fab_route_main"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_pin_drop_24dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/standardColorWhite"
+        app:fabSize="mini"
+        app:rippleColor="@color/fabPressColorGrey" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_search_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fab_closest_station"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_map_24dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/standardColorWhite"
+        app:fabSize="mini"
+        app:rippleColor="@color/fabPressColorGrey" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_search_route_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fab_search_route"
+        android:layout_alignRight="@id/fab_search_route"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="50dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:visibility="gone"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:text="线路检索" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_closest_station_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fab_closest_station"
+        android:layout_alignRight="@id/fab_closest_station"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@id/fab_closest_station"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:visibility="gone"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:text="最近站点" />
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

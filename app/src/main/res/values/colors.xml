@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题色调-->
+    <color name="colorPrimary">#febe35</color>
+    <color name="colorPrimaryDark">#2D3134</color>
+    <color name="colorPrimaryLight">#F5F5F5</color>
+    <color name="colorAccent">#e37479</color>
+
+
+    <!--控件颜色（文字、分割线等）-->
+    <color name="titleColor">#232325</color>
+    <color name="textPrimaryColor">#212121</color>
+    <color name="textSecondaryColor">#727272</color>
+    <color name="textAccentColor">#e37479</color>
+    <color name="btnNormal">#febe35</color>
+    <color name="btnPressed">#CC9933</color>
+    <color name="dividerColor">#e6e6e6</color>
+
+    <!--业务颜色-->
+    <color name="startStationGreenColor">#52b786</color>
+    <color name="terminalStationRedColor">#e37479</color>
+    <color name="defaultStationGreyColor">#727272</color>
+    <color name="titleBackgroundColor">#faf9f7</color>
+    <color name="setStationDialogItemClickedGreyColor">#dddddd</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="halfTransparentGrey">#20727272</color>
+
+    <!--抽屉颜色-->
+    <color name="drawerLayoutBackgroundColor">#130c0e</color>
+    <color name="drawerLayoutItemBackgroundColor">#000000</color>
+    <color name="drawerLayoutItemClickedGreyColor">#292929</color>
+
+    <!--标准色-->
+    <color name="standardColorBlack">#000000</color>
+    <color name="standardColorWhite">#ffffff</color>
+
+    <!--数字键盘颜色-->
+    <color name="keyPressColor">#B6B6B6</color>
+    <color name="keyNormalColor">#FFFFFF</color>
+
+    <color name="payBackgroudColor">#80000000</color>
+    <color name="keyboardMainColor">#515151</color>
+
+    <color name="fabPressColorGrey">#CBCBCB</color>
+</resources>

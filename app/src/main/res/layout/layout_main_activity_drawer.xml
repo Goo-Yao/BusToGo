@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sc_main_drawer"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/standardColorBlack">
+
+    <LinearLayout
+        android:layout_width="280dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/standardColorBlack"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            android:layout_width="280dip"
+            android:layout_height="140dip"
+            android:gravity="center_vertical">
+
+            <com.rdc.bustogo.ui.customview.CircleImageView
+                android:id="@+id/civ_user_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:src="@drawable/ic_default_user_icon_48dp"
+                app:border_color="#00ffffff"
+                app:border_overlay="false"
+                app:border_width="0dp" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/civ_user_icon"
+                android:text="一朵花"
+                android:textColor="@color/standardColorWhite"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/guidance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dip"
+            android:gravity="center"
+            android:text="导航"
+            android:textColor="@color/standardColorWhite"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/dividerColor" />
+
+        <TextView
+            android:id="@+id/selfdate"
+            style="@style/list_style"
+            android:checked="true"
+            android:drawableLeft="@drawable/ic_personal_msg_24dp"
+            android:text="个人中心" />
+
+        <TextView
+            android:id="@+id/fingerprint"
+            style="@style/list_style"
+            android:drawableLeft="@drawable/ic_credit_card_confirm_24dp"
+            android:text="付款方式" />
+
+
+        <TextView
+            android:id="@+id/ring"
+            style="@style/list_style"
+            android:drawableLeft="@drawable/ic_inform_24dp"
+            android:text="通知" />
+
+
+        <TextView
+            android:id="@+id/config"
+            style="@style/list_style"
+            android:drawableLeft="@drawable/ic_alarm_white_24dp"
+            android:text="闹钟" />
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dip"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="@color/standardColorWhite"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/dividerColor" />
+
+        <TextView
+            android:id="@+id/bill"
+            style="@style/list_style"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_ticket_white_24dp"
+            android:text="我的车票" />
+
+        <TextView
+            android:id="@+id/history"
+            style="@style/list_style"
+            android:checked="false"
+            android:drawableLeft="@drawable/ic_history_white_24dp"
+            android:text="历史账单" />
+
+        <TextView
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dip"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/standardColorWhite"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/dividerColor" />
+
+        <TextView
+            android:id="@+id/about"
+            style="@style/list_style"
+            android:drawableLeft="@drawable/ic_about_white_24dp"
+            android:text="关于" />
+
+        <TextView
+            android:id="@+id/exit"
+            style="@style/list_style"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_exit_to_app_white_24dp"
+            android:text="注销登录" />
+
+
+    </LinearLayout>
+</ScrollView>

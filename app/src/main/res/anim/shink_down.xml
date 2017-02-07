@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator" >
+
+    <!--
+		从中间一条直线展开，从而形成一个页面
+		android:fromXScale="0.0"
+	   android:toXScale="1.0"
+	           上面两句指的是组件从0.0比例展开到原图的  宽度  大小
+	   android:fromYScale="1.0"
+	   android:toYScale="1.0"
+	          这 上面两句指的是组件在高度上不发生变化
+	   android:pivotX="50%" 
+	           这一句指的是以组件宽的中间点作参照点展开
+	   android:duration="400"
+		最后一句指动作时间为0.4秒（400毫秒）
+
+    -->
+
+    <scale
+        android:duration="300"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotY="100%"
+        android:toXScale="1.0"
+        android:toYScale="0.0" />
+
+    <!--
+		这样形成的效果就是你想要的展开效果， 
+		在res文件夹下新建anim文件夹，在anime文件夹中新建一个xml，将这段代码复制进去
+		然后在对应的Activity中用AnimationUtil类load一下就可以用了
+
+    -->
+
+</set>
