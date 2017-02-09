@@ -202,6 +202,7 @@ public class MainMapActivity extends BaseActivity<IVMainMap, MainMapPresenter> i
             public void onAnimationStart(Animation animation) {
                 // 设置不可点击
                 fabRouteMain.setEnabled(false);
+                mIsRouteMenuShowing = false;
             }
 
             @Override
