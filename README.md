@@ -45,3 +45,6 @@
 
 ### 模拟扫码支付二维码
 ![](http://odzvmv4ab.bkt.clouddn.com/%E6%A8%A1%E6%8B%9F%E6%94%AF%E4%BB%98%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
+
+### 联系方式
+QQ/WeChat:532612578
