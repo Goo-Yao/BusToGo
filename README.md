@@ -20,7 +20,7 @@
 
 ## App截图
 ### 主地图界面
-![](http://odzvmv4ab.bkt.clouddn.com/%E4%B8%BB%E7%95%8C%E9%9D%A2.png)
+![](http://odzvmv4ab.bkt.clouddn.com/%E4%B8%BB%E5%9C%B0%E5%9B%BE%E7%95%8C%E9%9D%A2.png)
 
 ### 最近公交站
 ![](http://odzvmv4ab.bkt.clouddn.com/%E6%9C%80%E8%BF%91%E5%85%AC%E4%BA%A4%E7%AB%99.jpg)
