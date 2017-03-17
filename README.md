@@ -20,7 +20,7 @@
 
 ## App截图
 ### 主地图界面
-![](http://odzvmv4ab.bkt.clouddn.com/bus_To_Go.png)
+![](http://odzvmv4ab.bkt.clouddn.com/bus_To_Go.jpg)
 
 ### 最近公交站
 ![](http://odzvmv4ab.bkt.clouddn.com/%E6%9C%80%E8%BF%91%E5%85%AC%E4%BA%A4%E7%AB%99.jpg)
