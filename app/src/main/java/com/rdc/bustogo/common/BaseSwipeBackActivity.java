@@ -63,6 +63,9 @@ public abstract class BaseSwipeBackActivity<V, P extends BasePresenter<V>> exten
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (mProgressDialog != null && mProgressDialog.isShowing()) {
+            dismissProgressDialog();
+        }
         mPresenter.detachView();
     }
 
